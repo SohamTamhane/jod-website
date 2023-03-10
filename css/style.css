@@ -1,0 +1,233 @@
+@font-face {
+    font-family: 'Jod Font';
+    src: url('../fonts/Font-1.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --aqua-blue: #3a9073e8;
+    --beige: #f2dcc4c7;
+    --gray: #f1f1f1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---- Navbar Starts Here  ---- */
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #0000008f;
+}
+.navbar{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 15px;
+    /* font-family: 'Jod Font'; */
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    color: var(--white);
+    background-color: #000000a6;
+}
+.navbar:hover{
+    background-color: #000000a6;
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.website-logo{
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 900;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 25px;
+}
+.links{
+    cursor: pointer;
+    padding: 0px 10px;
+}
+.nav-icon{
+    width: auto;
+    height: 23px;
+    padding: 0px 6px;
+}
+/* ---- Navbar Ends Here  ---- */
+
+/* ---- Dropdown Starts Here ---- */
+.dropdown-box{
+    display: none;
+    /* display: grid; */
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    justify-content: space-around;
+    /* font-family: 'Jod Font'; */
+    font-family: 'Quicksand', sans-serif;
+    color: var(--white);
+    padding-bottom: 20px;
+    padding: 60px 0px;
+}
+.dropdown-heading{
+    color: var(--white);
+    font-weight: 900;
+    font-size: 18px;
+    padding: 8px 0px;
+}
+.dropdown-links{
+    padding: 4px 0px;
+    cursor: pointer;
+}
+
+/* ---- Dropdown Starts Here ---- */
+
+/* ---- Section-1 Starts Here ---- */
+.section-1{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/section-2.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.main-heading{
+    font-family: 'Jod Font';
+    color: var(--white);
+    font-weight: 900;
+    font-size: 35px;
+}
+.main-sub-heading{
+    font-family: 'Jod Font';
+    color: var(--white);
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+}
+/* ---- Section-1 Ends Here ---- */
+
+
+/* --- Section-2 Starts Here ---- */
+.section-2{
+    background-color: var(--white);    
+}
+
+.section-heading{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 900;
+    font-size: 23px;
+    text-align: center;
+    padding: 20px 0px;
+}
+.product-card{
+    font-family: 'Jod Font';
+    /* font-family: 'Quicksand', sans-serif; */
+    /* letter-spacing: -1.2px; */
+}
+.product-img-bg{
+    background-color: var(--gray);
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+.product-card{
+    border: 3px solid var(--gray);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+#product-img-1{
+    width: 250px;
+    height: 250px;
+    background-image: url('../images/p1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#product-img-1:hover{
+    background-image: url('../images/p1_hover.png');
+}
+.product-name{
+    font-size: 18px;
+    font-weight: 900;
+}
+.product-price{
+    font-size: 18px;
+    font-weight: 900;
+}
+.product-card-container{
+    /* padding: 20px 30px; */
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    justify-content: center;
+}
+/* --- Section-2 Ends Here ---- */
+
+
+/* ---- Section-3 Starts Here */
+.section-3{
+    margin-top: 30px;
+    background-color: var(--white);    
+}
+/* ---- Section-3 Ends Here */
+
+
+/* ---- Section-4 Starts Here */
+.section-4{
+    margin-top: 30px;
+    background-color: var(--white);    
+}
+/* ---- Section-4 Ends Here */
+
+
+/* ---- Footer Starts Here */
+footer{
+    margin-top: 20px;
+    background-color: #000000a6;
+
+}
+.main-footer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: normal;
+    justify-content: space-evenly;
+
+    padding: 20px 0px;
+    font-family: 'Jod Font';    
+}
+.footer-heading{
+    font-size: 18px;
+    font-weight: 900;
+    color: var(--black);
+    margin: 8px 0px;
+}
+.footer-links{
+    font-size: 14px;
+    color: var(--white);
+    margin: 3px 0px;
+    cursor: pointer;
+}
+.copyright-div{
+    font-family: 'Jod Font';    
+    color: var(--white);
+    text-align: center;
+    padding: 10px 0px;
+}
+
+/* ---- Footer Ends Here */
